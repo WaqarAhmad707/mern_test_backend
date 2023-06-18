@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// creating schema for car
 const carSchema = new mongoose.Schema({
   category: {
     type: mongoose.Schema.Types.ObjectId,
