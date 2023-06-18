@@ -1,12 +1,12 @@
 const Joi = require('joi');
 
-// Validation schema for creating a car
+// Validation schema for register
 const registerSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().required(),
 });
 
-// Validation schema for updating a car
+// Validation schema for login
 const loginSchema = Joi.object({
   email: Joi.string().required(),
   password: Joi.string().required(),
