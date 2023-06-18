@@ -26,3 +26,17 @@ To start the ExpressJS app, use the following command:
    ```
 The app will be running on port 3001. Open your browser and visit http://localhost:3001 to view the app.
 
+## Folder Structure
+   ```bash
+   express-app/
+  ├── node_modules/         # Dependencies
+  ├── public/               # Static files (e.g., CSS, images)
+  ├── routes/               # Route handlers
+  ├── views/                # View templates
+  ├── .gitignore            # Git ignore file
+  ├── app.js                # Express app configuration
+  ├── config.js             # App configuration
+  ├── package.json          # Project metadata and dependencies
+  └── README.md             # Project documentation (you are here)
+   ```
+
