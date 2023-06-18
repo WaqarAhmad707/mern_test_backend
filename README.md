@@ -23,6 +23,6 @@ This is a basic ExpressJS application that runs on port 3001.
 To start the ExpressJS app, use the following command:
    ```bash
    npm start
-   
+   ```
 The app will be running on port 3001. Open your browser and visit http://localhost:3001 to view the app.
 
