@@ -1,4 +1,4 @@
-const Joi = require('joi');
+const Joi = require("joi");
 
 // Validation schema for creating a car
 const createCarSchema = Joi.object({

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 // connecting with DB
 async function connectToDatabase() {
@@ -8,9 +8,9 @@ async function connectToDatabase() {
       useUnifiedTopology: true,
     });
 
-    console.log('Connected to MongoDB');
+    console.log("Connected to MongoDB");
   } catch (error) {
-    console.error('Error connecting to MongoDB:', error);
+    console.error("Error connecting to MongoDB:", error);
     process.exit(1); // Exit the application if unable to connect to MongoDB
   }
 }
