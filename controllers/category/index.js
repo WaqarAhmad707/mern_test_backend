@@ -3,13 +3,13 @@ const router = express.Router();
 const Category = require('../../models/categoryModel');
 const { createCategorySchema, updateCategorySchema } = require('../../validations/categoryValidation');
 
-// Registration API
+// Create new category API
 router.post('/', async (req, res) => {
     // Get user data from the request body
     const { name } = req.body;
 
     try {
-        // Validate the request body against the updateCarSchema
+        // Validate the request body against the createCategorySchema
         await createCategorySchema.validateAsync(req.body);
 
         const category = await Category.create({ name });
@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Login API
+// Get all categories API
 router.get('/', async (req, res) => {
     try {
         const categories = await Category.find({}, { name: 1 });
@@ -33,6 +33,7 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Get a category by ID API
 router.get('/:id', async (req, res) => {
     const categoryId = req.params.id;
     try {
@@ -47,12 +48,13 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+// Update a category API
 router.put('/:id', async (req, res) => {
     const categoryId = req.params.id;
     const { name } = req.body;
 
     try {
-        // Validate the request body against the updateCarSchema
+        // Validate the request body against the updateCategorySchema
         await updateCategorySchema.validateAsync(req.body);
 
         const category = await Category.findByIdAndUpdate(
@@ -75,6 +77,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
+// delete a category API
 router.delete('/:id', async (req, res) => {
     const categoryId = req.params.id;
     try {
