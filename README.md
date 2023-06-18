@@ -30,12 +30,13 @@ The app will be running on port 3001. Open your browser and visit http://localho
    ```bash
    express-app/
   ├── node_modules/         # Dependencies
-  ├── public/               # Static files (e.g., CSS, images)
-  ├── routes/               # Route handlers
-  ├── views/                # View templates
+  ├── configs/              # App configuration
+  ├── controllers/          # App Controllers handlers
+  ├── middlewares/          # App Middlewares
+  ├── models/               # App models
+  ├── validations/          # App validations
   ├── .gitignore            # Git ignore file
-  ├── app.js                # Express app configuration
-  ├── config.js             # App configuration
+  ├── index.js              # Express app configuration
   ├── package.json          # Project metadata and dependencies
   └── README.md             # Project documentation (you are here)
    ```
