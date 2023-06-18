@@ -8,3 +8,8 @@ This is a basic ExpressJS application that runs on port 3001.
 
    ```bash
    git clone <https://github.com/WaqarAhmad707/mern_test_backend.git>
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd express-app
