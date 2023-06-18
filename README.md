@@ -13,3 +13,14 @@ This is a basic ExpressJS application that runs on port 3001.
 
    ```bash
    cd express-app
+
+3. Install the dependencies using npm:
+
+   ```bash
+   npm install
+
+## Usage
+To start the ExpressJS app, use the following command:
+   ```bash
+   npm start
+
