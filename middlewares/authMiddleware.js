@@ -16,8 +16,11 @@ function authenticateToken(req, res, next) {
     }
 
     // Add the decoded data to the request object
-    req.userId = decoded.userId;
-
+    req.user = {
+      userId: decoded.userId,
+      email: decoded.email,
+      name: decoded.name,
+    }
     next();
   });
 }
